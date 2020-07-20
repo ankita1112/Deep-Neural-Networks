@@ -13,7 +13,7 @@
 Below are the list of works that have been as a part fo this project: 
 
   1. Implemented two types of deep learning networks, fully connected and convolutional neural networks to classify images of 
-     hands in poses corresponding to letters in American Sign Language.
+     hands in poses corresponding to letters in American Sign Language and plot learning curves.
 
   2. Optimised the architecture and parameters of the networks using individual parameter sweeps, grid search, dropout layers 
      and batch normalisation.
