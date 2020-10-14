@@ -21,10 +21,10 @@
     - Training/Validation/Testing set sizes are 2500/1000/1000 as described above (with the validation set derived from the original test dataset)
     - I will investigate both fully connected and CNN architectures.
 
-  -  Implemented fully connected and convolutional neural networks to classify images of hands in poses corresponding to letters 
+-  Implemented fully connected and convolutional neural networks to classify images of hands in poses corresponding to letters 
   in American Sign Language with an accuracy of 92%
 
-  -  Optimised the architecture and parameters of the networks using individual parameter sweeps, grid search, dropout layers 
+-  Optimised the architecture and parameters of the networks using individual parameter sweeps, grid search, dropout layers 
      and batch normalisation. Approach to optimisation:
     1. First i will explore the number of and size of hidden layers. I will see how my model performs for different layers. We know that MLP with just one hidden layer can theoretically model even the mostcomplex functions if it has enough neurons. Though for complex problems, deep networks have a much higher efficiency. My training and testing data sizes are 2500 and 1000 which is not too big, so 2 or three layers can give a good performance.
     2. Second i will explore the learning rate. The learning rate is one the most important hyperparameter. I will loop over the values 0.0001,0.001,0.01 and 0.1 to get a good performimg model. When plotting the loss as a function of the learning rate, it should drop at first but after sometime, the learning rate will become too large, so the loss will start to increase. Therefore using the Adam optimizer, the learning rate should lie around its default value.
